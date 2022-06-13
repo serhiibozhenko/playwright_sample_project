@@ -12,10 +12,6 @@ exports.LoginPage = class LoginPage {
       .selectOption("berlin");
   }
 
-  // async typeUserName(email) {
-  //   await this.page.fill('input[name="email"]', email);
-  // }
-
   async typeUserName(email) {
     await this.page.fill('input[name="email"]', email);
   }
@@ -78,8 +74,8 @@ exports.LoginPage = class LoginPage {
     await this.page.fill('input[name="addressCity"]', text);
   }
 
-  async mobilePhon(number) {
-    await this.page.fill('input[name="mobilePhone"]', number);
+  async mobilePhon(text) {
+    await this.page.fill('input[name="mobilePhone"]', text);
   }
 
   async checkClick() {
