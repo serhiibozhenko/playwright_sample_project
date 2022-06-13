@@ -5,11 +5,6 @@ exports.LoginPage = class LoginPage {
   constructor(page) {
     this.page = page;
   }
-  async navigate() {
-    await this.page.goto(
-      "https://www.share-now.com/de/en/registration/personal-data"
-    );
-  }
 
   async selectCity() {
     await this.page
@@ -17,8 +12,12 @@ exports.LoginPage = class LoginPage {
       .selectOption("berlin");
   }
 
-  async typeUserName(text) {
-    await this.page.fill('input[name="email"]', text);
+  // async typeUserName(email) {
+  //   await this.page.fill('input[name="email"]', email);
+  // }
+
+  async typeUserName(email) {
+    await this.page.fill('input[name="email"]', email);
   }
 
   async typePassword(text) {
@@ -79,8 +78,8 @@ exports.LoginPage = class LoginPage {
     await this.page.fill('input[name="addressCity"]', text);
   }
 
-  async mobilePhon(text) {
-    await this.page.fill('input[name="mobilePhone"]', text);
+  async mobilePhon(number) {
+    await this.page.fill('input[name="mobilePhone"]', number);
   }
 
   async checkClick() {
@@ -96,6 +95,6 @@ exports.LoginPage = class LoginPage {
   //check next page for second page
 
   // async check3page(text) {
-  //   await this.page.fill("#cc-holder-name", text);
+  //   await this.page.fill('[data-test-id="cc-holder-name"]', text);
   // }
 };
