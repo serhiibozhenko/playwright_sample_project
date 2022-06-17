@@ -75,8 +75,14 @@ exports.LoginPage = class LoginPage {
   }
 
   async mobilePhon(text) {
-    await this.page.fill('input[name="mobilePhone"]', text);
+    await this.page.type('input[name="mobilePhone"]', text);
   }
+
+  // async checkClick() {
+  //   await this.page
+  //     .locator("input[type = 'checkbox'][required]")
+  //     .check({ force: true });
+  // }
 
   async checkClick() {
     await this.page
