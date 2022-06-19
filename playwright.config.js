@@ -53,9 +53,9 @@ const config = {
     // },
 
     // {
-    //   name: 'firefox',
+    //   name: "firefox",
     //   use: {
-    //     ...devices['Desktop Firefox'],
+    //     ...devices["Desktop Firefox"],
     //   },
     // },
 
@@ -82,9 +82,9 @@ const config = {
 
     /* Test against branded browsers. */
     // {
-    //   name: 'Microsoft Edge',
+    //   name: "Microsoft Edge",
     //   use: {
-    //     channel: 'msedge',
+    //     channel: "msedge",
     //   },
     // },
     {

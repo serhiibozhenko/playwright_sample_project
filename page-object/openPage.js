@@ -1,13 +1,13 @@
-const { expect } = require("@playwright/test");
-
-export class HomePage {
+exports.OpenPage = class OpenPage {
+  /**
+   * @param {import('playwright').Page} page
+   */
   constructor(page) {
     this.page = page;
   }
-
-  async open() {
+  async navigate() {
     await this.page.goto(
       "https://www.share-now.com/de/en/registration/personal-data"
     );
   }
-}
+};
