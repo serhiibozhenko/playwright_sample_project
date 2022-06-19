@@ -61,7 +61,4 @@ test("Valid information for authorization", async ({ page }) => {
 
   await new Promise((resolve) => setTimeout(resolve, 3000));
 
-  //check next page for second page
-
-  // await loginPage.check3page("869654676");
 });

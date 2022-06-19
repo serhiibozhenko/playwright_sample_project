@@ -78,12 +78,6 @@ exports.LoginPage = class LoginPage {
     await this.page.type('input[name="mobilePhone"]', text);
   }
 
-  // async checkClick() {
-  //   await this.page
-  //     .locator("input[type = 'checkbox'][required]")
-  //     .check({ force: true });
-  // }
-
   async checkClick() {
     await this.page
       .locator("input[type = 'checkbox'][required]")
@@ -93,10 +87,4 @@ exports.LoginPage = class LoginPage {
   async clickLogin() {
     await this.page.click("#registration-save-button");
   }
-
-  //check next page for second page
-
-  // async check3page(text) {
-  //   await this.page.fill('[data-test-id="cc-holder-name"]', text);
-  // }
 };
