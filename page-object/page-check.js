@@ -1,3 +1,5 @@
+const { expect } = require("@playwright/test");
+
 exports.AuthorizationCheck = class AuthorizationCheck {
   /**
    * @param {import('playwright').Page} page

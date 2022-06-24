@@ -6,7 +6,7 @@
 
 // const dataFaker = require("../faker_data/dataGenerator");
 
-// test("Valid information for authorization", async ({ page }) => {
+// test("Enter for input mobile phone 17 symbols", async ({ page }) => {
 //   const loginPage = new LoginPage(page);
 //   const authorizationCheck = new AuthorizationCheck(page);
 //   const openPage = new OpenPage(page);
@@ -41,17 +41,18 @@
 //   await loginPage.birhtYear();
 //   await authorizationCheck.validateBirthYear();
 
-//   await loginPage.birthPlace(dataFaker.testdata.birthPlaceCountry);
+//   await loginPage.birthPlace("ы");
+//   await authorizationCheck.validatePlaceBirth();
 
-//   await loginPage.adressSt(dataFaker.testdata.adressSt);
+//   await loginPage.adressSt("ы");
 
-//   await loginPage.adressAdSt(dataFaker.testdata.adressAdSt);
+//   await loginPage.adressAdSt("ы");
 
 //   await loginPage.adressZipcode(dataFaker.testdata.zipCode);
 
-//   await loginPage.adressCity(dataFaker.testdata.nameCity);
+//   await loginPage.adressCity("ы");
 
-//   await loginPage.mobilePhon(dataFaker.testdata.phoneNumber);
+//   await loginPage.mobilePhon("11111111111111111");
 
 //   await loginPage.checkClick();
 //   await authorizationCheck.validateCheckBox();
